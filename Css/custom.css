@@ -87,7 +87,7 @@ nav a {
 }
 nav li a:hover {
   background-color: #255a75;
-  border-color: #fff;
+  border-color: #fff !important;
   color: #fff !important;
 }
 #search-bar-search i {
