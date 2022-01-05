@@ -1,0 +1,505 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SolaimanLipi";
+}
+html {
+  font-size: 62.5%;
+}
+/* ====================================================== root ========================================= */
+:root {
+  --font-color: black;
+  --link-font: 1.6rem;
+  --section-background: #eff5f4;
+  --post-title-font-size: 1.7rem !important;
+  --font-ninteen: 1.9rem;
+  --title-bg: #0e3c52;
+  --news-title-font-family: "SolaimanLipi";
+  --leatest-heading: 2.8rem;
+  --time-font: 1.4rem;
+}
+/* ====================================================== Reusable Css ================================== */
+/* .sumon {
+  display: none !important;
+} */
+a {
+  text-decoration: none;
+  color: var(--font-color) !important;
+  font-size: var(--link-font);
+}
+a:hover {
+  color: var(--title-bg) !important;
+}
+.fw-medium {
+  font-weight: 500 !important;
+}
+.image-with-datails::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 50%, rgb(0, 0, 0) 100%);
+  pointer-events: none;
+}
+ul {
+  list-style: none;
+}
+.header-details li {
+  font-size: 1.6rem;
+}
+.header-social li {
+  width: 2.5em;
+  height: 2.5em;
+  font-size: 1.5rem;
+}
+.header-social .facebook {
+  background-color: #3b5998;
+}
+.header-social .youtube {
+  background-color: #ff0000;
+}
+.header-social .twitter {
+  background-color: #1da1f2;
+}
+.header-social .instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+.header-social .linkedin {
+  background-color: #0a66c2;
+}
+.header-social .printarest {
+  background-color: #695296;
+}
+.advertisment {
+  height: 25rem !important;
+}
+/* --------------------------------------------------- navbar-------------------------------------------------------------------- */
+nav {
+  background-color: var(--title-bg);
+}
+nav a {
+  color: #fff;
+  border-bottom: 1px solid transparent !important;
+}
+nav li a:hover {
+  background-color: #255a75;
+  border-color: #fff;
+  color: #fff !important;
+}
+#search-bar-search i {
+  font-size: 1.6rem !important;
+}
+
+.dropdown-menu-custom a:hover{
+  background-color: initial !important;
+  color: black !important;
+}
+.dropdown-menu-custom{
+  left: 0;
+  top: 100%;
+  background-color: white;
+}
+.dropdown:hover .dropdown-menu-custom{
+  display: block !important;
+}
+.second-search {
+  right: 1rem;
+  top: -1rem;
+}
+.search-bar {
+  top: 0.5rem;
+}
+#search-bar-search a:hover {
+  background: transparent !important;
+  border-bottom: none !important;
+}
+.dropdown-menu li {
+  padding: 1.5rem;
+  border-bottom: none;
+  color: black !important;
+}
+.dropdown-menu a:hover {
+  color: black !important;
+  background: initial;
+  border-bottom: none;
+}
+.breaking-news span {
+  font-size: var(--link-font);
+  background-color: var(--title-bg);
+}
+/* --------------------- search bar ------------------------- */
+.search-bar {
+  left: 0;
+  right: 0;
+}
+.search-bar input,
+.search-bar .fa-search,
+.search-bar .fa-times {
+  font-size: 1.6rem;
+}
+.search-icon {
+  background-color: #343a40;
+}
+.hide-content {
+  left: 0;
+  right: 0;
+  top: 80%;
+  z-index: 1000;
+}
+.hide-content a:hover {
+  background-color: initial;
+  color: var(--font-color) !important;
+}
+/* ============================================================= first section=========================================== */
+.first-section ul li:not(:first-child) {
+  font: 1.5rem arial;
+  background-color: #1589bd;
+}
+.trading a:hover {
+  color: white !important;
+}
+.top-left .news h3 {
+  font-size: var(--post-title-font-size);
+}
+.top-left .news a {
+  z-index: -500;
+}
+.top-middle h1 {
+  font-size: 3.6rem;
+}
+.top-middle p {
+  font-size: 1.7rem;
+}
+.top-right {
+  background-color: var(--section-background);
+}
+.section-title {
+  border-top: 3px solid black;
+  border-bottom: 1px solid gray;
+  margin: 1rem 0 !important;
+}
+.section-title .more-read {
+  background: #f5f5f5;
+}
+.section-title a:not(:first-child) {
+  font-size: var(--link-font);
+  color: var(--title-bg) !important;
+}
+.section-title a:not(:first-child):hover {
+  color: gray !important;
+}
+.section-title a:first-child:hover {
+  color: initial !important;
+}
+.section-title .active {
+  background: none;
+  color: var(--title-bg) !important;
+}
+.first-section .top-right .mini-testimonial h3 {
+  font-size: var(--post-title-font-size);
+}
+.first-section .top-right .mini-testimonial h3 span {
+  font-size: var(--post-title-font-size);
+}
+/* ------------------------------------------------ more news section design starts ------------------------------------------------------ */
+.more-news {
+  background-color: var(--section-background);
+}
+
+.more-news p {
+  font-size: var(--font-ninteen) !important;
+}
+.last-recent {
+  border: 2px solid var(--title-bg);
+  height: 60rem !important;
+}
+.last-recent .recent-top {
+  background-color: var(--section-background);
+  top: 0;
+}
+.last-recent .recent-top a {
+  font-size: var(--post-title-font-size);
+}
+.last-recent .recent-top a:hover {
+  color: black !important;
+}
+.last-recent .recent-top .active:hover {
+  color: white !important;
+}
+.last-recent .recent-bottom {
+  bottom: 0;
+  background-color: var(--title-bg);
+}
+.last-recent .recent-bottom a {
+  font-size: var(--post-title-font-size);
+}
+.last-recent .recent-bottom a {
+  color: white !important;
+}
+.onehundrad img,
+.last-recent .recent-news img {
+  width: 10rem !important;
+  height: 7.5rem !important;
+}
+.recent-news img {
+  max-width: 11rem;
+  width: 11rem;
+  height: 7.5rem;
+  object-fit: cover;
+}
+.recent-news p {
+  font-size: var(--post-title-font-size) !important;
+}
+/* ----------------------------------------- bootstrap active classes                             */
+.active {
+  color: white !important;
+  background: var(--title-bg);
+}
+/* ------------------------------------------------Jatiyo section ------------------------------------------- */
+.image-gallery .image-info {
+  left: 1rem;
+  bottom: 0.5rem;
+  right: 1rem;
+  font-size: 2.2rem;
+  z-index: 100;
+  line-height: 1;
+}
+.image-gallery .image-info:hover {
+  color: white !important;
+}
+.image-gallery {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.4rem;
+}
+.jatiyo-section .only-news a {
+  font-size: var(--post-title-font-size);
+}
+.saradesh-news p {
+  font-size: 2.2rem;
+}
+.area-news .section-title .more-read {
+  background: white !important;
+  font-size: 2.4rem;
+  color: #565656;
+}
+
+.area-news .search-location,
+.area-news select,
+.area-news option {
+  font-size: var(--post-title-font-size);
+  color: rgb(73, 73, 73);
+  padding: 1rem 0;
+}
+
+.area-news .search-location {
+  background: #84bbd4;
+}
+.area-news .search-location:hover {
+  background: rgba(132, 187, 212, 0.9);
+}
+/* ---------------------------------------------- ‍sports-secion and binodon-------------------------------------------------------- */
+.sports-section {
+  background-color: var(--section-background);
+}
+.binodon-gallery {
+  grid-template-rows: auto auto;
+  grid-gap: 0.5rem;
+}
+.jatiyo-section .image-with-datails,
+.sports .image-with-datails {
+  height: 21rem;
+}
+.image-with-datails img {
+  height: 100% !important;
+}
+.binodon-gallery .image-with-datails:not(:first-child) p {
+  font-size: var(--post-title-font-size);
+}
+.grid-item1 {
+  grid-column: 1 / span 2;
+}
+.binodon-gallery img {
+  transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  -o-transition: all 0.7s;
+}
+.binodon-gallery .image-with-datails img:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.binodon-right h3 {
+  font-size: var(--post-title-font-size);
+}
+/* --------------------------------------------------------- Health section ----------------------------------------------------- */
+.health {
+  background-color: var(--section-background);
+}
+.exclusive-info {
+  background-color: #eeeeee;
+  font-size: var(--post-title-font-size) !important;
+  border-left: 4px solid var(--title-bg);
+}
+.last-section-img img {
+  max-height: 20rem;
+  height: 20rem;
+}
+/* ------------------------------------------------------leatest section start ------------------------------------------------ */
+.leatest-top h1{
+  font-size: 3rem;
+}
+.social-share li:first-child{
+  font-size: 1.4rem;
+}
+.social-share li:not(:first-child){
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #1da1f2;
+  font-size: 1.8rem;
+
+}
+.social-share li:last-child{
+  background-color: #075e54;
+}
+.leates .tab-news a{
+  font-size: var(--link-font);
+  background-color: #e5ebed;
+}
+/* ----------------------------------------------------- Resposive css-------------------------------------------------------- */
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 58%;
+  }
+  .collapse{
+    background: var(--title-bg) !important;
+  }
+  .collapse li a{
+    color: white !important;
+  }
+  .dropdown-menu-custom{
+    left: 15%;
+    top: 0;
+    width: 50%;
+  }
+  
+  .dropdown-menu-custom li a{
+    color: black !important;
+  }
+  .last-section-img img {
+    height: 20rem !important;
+  }
+  nav {
+    background: var(--section-background) !important;
+  }
+  nav .nav-link {
+    font-size: initial !important;
+    color: black !important;
+  }
+  nav a:hover {
+    background: initial !important;
+    color: initial !important;
+  }
+  .second-search {
+    display: block !important;
+    top: 1rem;
+  }
+  #search-bar-search i {
+    font-size: 2rem !important;
+    color: var(--title-bg) !important;
+  }
+  .header-logo {
+    display: none;
+  }
+  .navbar-brand {
+    display: block !important;
+  }
+  .navbar-toggler {
+    left: 1rem;
+    font-size: 2rem !important;
+    top: 0.8rem;
+  }
+  .image-with-datails {
+    height: initial;
+  }
+  .little-news-inside-big {
+    flex-direction: column;
+    margin: 0 !important;
+  }
+  .little-news-inside-big .news {
+    border: none !important;
+  }
+  .little-news-inside-big a {
+    border: 0 !important;
+  }
+
+  .antorjatik-border {
+    border: none !important;
+  }
+  .header-top {
+    display: none !important;
+  }
+  .last-recent {
+    height: 40rem !important;
+  }
+  .sikkha-content {
+    flex-direction: row !important;
+  }
+  .binodon-content {
+    flex-direction: row !important;
+  }
+  .saradesh-news-detail {
+    border: none !important;
+  }
+  .onehundrad .news {
+    border-bottom: 1px solid #80808050 !important;
+  }
+  .remove-border-end {
+    border: none !important;
+  }
+} /* media */
+/* ----------------------------------------------------- Resposive css------------------------------------------------------------------ */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 48%;
+  }
+  nav {
+    padding: 1rem 0 !important;
+  }
+
+  .navbar-toggler {
+    top: 0.5rem;
+  }
+  .navbar-brand img {
+    width: 200px !important;
+  }
+  .second-search {
+    top: 0;
+  }
+  .without-image-news a {
+    font-size: 2rem !important;
+  }
+  .binodon-content {
+    flex-direction: column !important;
+  }
+} /* media */
+
+/* ----------------------------------------------------- Resposive css------------------------------------------------------------------ */
+@media screen and (max-width: 576px) {
+  .last-section-img img {
+    max-height: 28rem;
+    height: initial !important;
+    object-fit: cover;
+  }
+  .sikkha-content {
+    flex-direction: column !important;
+  }
+} /* media */
