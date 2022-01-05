@@ -83,7 +83,7 @@ nav {
 }
 nav a {
   color: #fff;
-  border-bottom: 1px solid transparent !important;
+  border-bottom: 2px solid transparent !important;
 }
 nav li a:hover {
   background-color: #255a75;
@@ -352,8 +352,8 @@ nav li a:hover {
   max-height: 20rem;
   height: 20rem;
 }
-/* ------------------------------------------------------leatest section start ------------------------------------------------ */
-.leatest-top h1{
+/* ------------------------------------------------------leatest page start ------------------------------------------------ */
+.leatest-title h1{
   font-size: 3rem;
 }
 .social-share li:first-child{
@@ -369,15 +369,49 @@ nav li a:hover {
 .social-share li:last-child{
   background-color: #075e54;
 }
-.leates .tab-news a{
+.leatest-top .tab-news a{
   font-size: var(--link-font);
   background-color: #e5ebed;
+  color: #222 !important;
+}
+.tab-news .active{
+  border-bottom: 4px solid var(--title-bg) !important;
+}
+.tab-news a:focus{
+  box-shadow: none !important;
+}
+.leatest-image-box{
+  width: 20rem;
+  height: 13.4rem;
+}
+.leatest-image-box img{
+  width: 100%;
+  object-fit: cover;
+}
+.leatest-every-news a h1{
+  font-size: var(--leatest-heading);
+}
+.leatest-news-time{
+  font-size: var(--time-font);
+  color:rgba(0, 0, 0, 0.5)
+}
+.leatest-every-news .news-explain {
+  font-size: var(--link-font);
+}
+.leatest-news-main .active{
+  background-color: transparent !important;
+}
+.leatest-news-main p{
+  color: black;
 }
 /* ----------------------------------------------------- Resposive css-------------------------------------------------------- */
 
 @media screen and (max-width: 992px) {
   html {
     font-size: 58%;
+  }
+  nav a {
+    border-bottom: none !important;
   }
   .collapse{
     background: var(--title-bg) !important;
@@ -467,7 +501,7 @@ nav li a:hover {
   }
 } /* media */
 /* ----------------------------------------------------- Resposive css------------------------------------------------------------------ */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   html {
     font-size: 48%;
   }
@@ -490,6 +524,8 @@ nav li a:hover {
   .binodon-content {
     flex-direction: column !important;
   }
+
+ 
 } /* media */
 
 /* ----------------------------------------------------- Resposive css------------------------------------------------------------------ */
@@ -501,5 +537,12 @@ nav li a:hover {
   }
   .sikkha-content {
     flex-direction: column !important;
+  }
+  .leatest-image-box{
+    width: 11rem;
+    height: 7rem;
+  }
+  .leatest-every-news a h1{
+    font-size: var(--post-title-font-size);
   }
 } /* media */
