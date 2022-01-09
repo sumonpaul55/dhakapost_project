@@ -15,10 +15,12 @@ html {
   --section-background: #eff5f4;
   --post-title-font-size: 1.7rem !important;
   --font-ninteen: 1.9rem;
-  --title-bg: #0e3c52;
+  --title-bg: #0c2b57;
   --news-title-font-family: "SolaimanLipi";
   --leatest-heading: 2.8rem;
   --time-font: 1.4rem;
+  --font-thirty-eight-for-page-title: 3.8rem;
+  --jatiyo-btn: #ececec;
 }
 /* ====================================================== Reusable Css ================================== */
 /* .sumon {
@@ -380,6 +382,11 @@ nav li a:hover {
 .tab-news a:focus{
   box-shadow: none !important;
 }
+.leatest-section .advertisment{
+  width: 30rem !important;
+  height: 25rem !important;
+  right: 0;
+}
 .leatest-image-box{
   width: 20rem;
   height: 13.4rem;
@@ -403,6 +410,20 @@ nav li a:hover {
 }
 .leatest-news-main p{
   color: black;
+}
+/* ----------------------------------------------------- jatio-page-start ---------------------------------------------------- */
+/* .jatiyo-page-top{
+
+} */
+.jatiyo-page-top .title-page{
+  font-size: var(--font-thirty-eight-for-page-title);
+}
+.jatiyo-page-top .jatiyo-page-top-buttons{
+  border-color: var(--font-color) !important;
+}
+.jatiyo-page-top .jatiyo-page-btn{
+  background-color: var(--jatiyo-btn);
+  font-size: var(--post-title-font-size);
 }
 /* ----------------------------------------------------- Resposive css-------------------------------------------------------- */
 
