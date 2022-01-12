@@ -21,6 +21,7 @@ html {
   --time-font: 1.4rem;
   --font-thirty-eight-for-page-title: 3.8rem;
   --jatiyo-btn: #ececec;
+  --jatiyo-page-title: 4rem;
 }
 /* ====================================================== Reusable Css ================================== */
 /* .sumon {
@@ -280,6 +281,21 @@ nav li a:hover {
 .jatiyo-section .only-news a {
   font-size: var(--post-title-font-size);
 }
+.jatiyo-page-left .section-title {
+  border-top-width: 2px;
+}
+.jatiyo-page-left .section-title h4{
+  font-size: var(--font-ninteen);
+}
+.read-more-btn{
+  background: var(--title-bg);
+  color: var(--jatiyo-btn);
+  font-size: var(--link-font);
+}
+.read-more-btn:hover{
+  background: #052c80;
+  color: var(--jatiyo-btn);
+}
 .saradesh-news p {
   font-size: 2.2rem;
 }
@@ -418,6 +434,9 @@ nav li a:hover {
 .jatiyo-page-top .title-page{
   font-size: var(--font-thirty-eight-for-page-title);
 }
+.jatiyo-page-title{
+  font-size: var(--jatiyo-page-title);
+}
 .jatiyo-page-top .jatiyo-page-top-buttons{
   border-color: var(--font-color) !important;
 }
@@ -425,9 +444,9 @@ nav li a:hover {
   background-color: var(--jatiyo-btn);
   font-size: var(--post-title-font-size);
 }
-/* ----------------------------------------------------- Resposive css-------------------------------------------------------- */
+/* ----------------------------------------------------- Resposive css 991-------------------------------------------------------- */
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   html {
     font-size: 58%;
   }
@@ -519,6 +538,17 @@ nav li a:hover {
   }
   .remove-border-end {
     border: none !important;
+    align-items: center !important;
+  }
+  .jatiyo-page-two-little{
+    flex-direction: row !important;
+    padding-bottom: 1rem;
+  }
+  .jatiyo-page-two-little .top-little-news{
+    border: none !important;
+  }
+  .jatiyo-page-left{
+    margin-top: 0 !important;
   }
 } /* media */
 /* ----------------------------------------------------- Resposive css------------------------------------------------------------------ */
@@ -545,7 +575,6 @@ nav li a:hover {
   .binodon-content {
     flex-direction: column !important;
   }
-
  
 } /* media */
 
@@ -565,5 +594,11 @@ nav li a:hover {
   }
   .leatest-every-news a h1{
     font-size: var(--post-title-font-size);
+  }
+  .jatiyo-page-two-little{
+    flex-direction: column !important;
+  }
+  .jatiyo-page-two-little img{
+    width: 100% !important;
   }
 } /* media */
