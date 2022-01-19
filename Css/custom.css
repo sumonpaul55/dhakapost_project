@@ -137,6 +137,20 @@ nav li a:hover {
   font-size: var(--link-font);
   background-color: var(--title-bg);
 }
+.breaking-news li {
+  position: relative;
+  margin: 0 20px !important;
+}
+.breaking-news li::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  left: -20px;
+}
 /* --------------------- search bar ------------------------- */
 .search-bar {
   left: 0;
@@ -366,9 +380,18 @@ nav li a:hover {
 }
 .exclusive-info {
   background-color: #eeeeee;
-  font-size: var(--post-title-font-size) !important;
+  font-size: var(--font-ninteen) !important;
   border-left: 4px solid var(--title-bg);
 }
+/* ----------------------------- modified exclusive--------------------------------------- */
+.exclusive-img {
+  height: 15rem;
+}
+.exclusive-img img {
+  height: 100%;
+  width: 100%;
+}
+/* ----------------------------- modified exclusive--------------------------------------- */
 .last-section-img img {
   max-height: 20rem;
   height: 20rem;
@@ -672,5 +695,8 @@ nav li a:hover {
   }
   .post-page .post-title {
     font-size: 2.5rem !important;
+  }
+  .exclusive-img {
+    height: initial !important;
   }
 } /* media */
