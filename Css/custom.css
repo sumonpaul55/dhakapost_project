@@ -424,10 +424,8 @@ nav li a:hover {
   box-shadow: none !important;
 }
 .leatest-section .advertisment {
-  width: 30rem !important;
-  height: 25rem !important;
-  right: 0;
-  top: -15px;
+  max-width: 30rem;
+  height: 25rem;
 }
 .leatest-image-box {
   width: 20rem;
@@ -497,7 +495,7 @@ nav li a:hover {
   font-size: var(--font-ninteen);
 }
 .this-overflow {
-  height: 106vh !important;
+  height: 125vh !important;
   overflow-y: scroll;
 }
 .this-overflow::-webkit-scrollbar {
