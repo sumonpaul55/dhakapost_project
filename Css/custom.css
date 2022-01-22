@@ -548,6 +548,9 @@ footer input {
 footer .footerlogo {
   max-width: 300px;
 }
+footer a:hover {
+  color: white !important;
+}
 /* ----------------------------------------------------- Resposive css 991-------------------------------------------------------- */
 
 @media screen and (max-width: 991px) {
