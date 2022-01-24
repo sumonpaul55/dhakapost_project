@@ -537,10 +537,12 @@ nav li a:hover {
   transform: translatey(-50%);
   font-size: var(--font-ninteen);
   right: 2px;
+  border-radius: 0 20px 20px 0;
 }
-
 footer input {
   font-size: var(--font-ninteen) !important;
+  padding-right: 15rem !important;
+  border-radius: 20px !important;
 }
 footer .footerlogo {
   max-width: 300px;
