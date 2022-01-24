@@ -16,4 +16,14 @@ $( document ).ready(function() {
     $(".navbar-toggler").click(function(){
         $(".collapse").toggleClass("d-none")
     });
+    
+    $('.go-top').hide(); //default hide.
+    $(window).scroll(function() {
+        var sumon = $(window).scrollTop(); 
+        if (sumon > 500) {
+            $('.go-top').fadeIn(); 
+        } else {
+            $('.go-top').fadeOut(); 
+        }
+    });
 });

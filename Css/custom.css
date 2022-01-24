@@ -476,6 +476,10 @@ nav li a:hover {
   font-size: var(--post-title-font-size);
 }
 /* ----------------------------------------------------- post page ---------------------------------------------- */
+.post-right {
+  position: sticky;
+  top: 60px;
+}
 .post-page .post-title {
   font-size: var(--font-thirty-eight-for-page-title) !important;
 }
@@ -500,13 +504,6 @@ nav li a:hover {
 }
 .big-news-details {
   font-size: var(--font-ninteen);
-}
-.this-overflow {
-  height: 132vh !important;
-  overflow-y: scroll;
-}
-.this-overflow::-webkit-scrollbar {
-  width: 0;
 }
 .comment-sort .sort {
   font-size: var(--post-title-font-size);
@@ -550,6 +547,11 @@ footer .footerlogo {
 }
 footer a:hover {
   color: white !important;
+}
+.go-top {
+  bottom: 20px;
+  right: 5rem;
+  font-size: 3rem;
 }
 /* ----------------------------------------------------- Resposive css 991-------------------------------------------------------- */
 
@@ -655,10 +657,6 @@ footer a:hover {
   }
   .jatiyo-page-left {
     margin-top: 0 !important;
-  }
-  .this-overflow {
-    overflow: initial !important;
-    height: initial !important;
   }
 } /* media */
 /* ----------------------------------------------------- Resposive css 767------------------------------------------------------------------ */
