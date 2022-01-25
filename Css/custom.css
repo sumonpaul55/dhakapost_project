@@ -533,15 +533,18 @@ nav li a:hover {
   height: 100% !important;
 }
 /*------------------------------------------------------ footer section design --------------------------------------------------- */
+.subscribed-field {
+  width: 40%;
+}
 .subscribe-button {
   transform: translatey(-50%);
   font-size: var(--font-ninteen);
-  right: 2px;
-  border-radius: 0 20px 20px 0;
+  left: 0;
+  border-radius: 20px 0 0 20px;
 }
 footer input {
-  font-size: var(--font-ninteen) !important;
-  padding-right: 15rem !important;
+  font-size: var(--post-title-font-size) !important;
+  padding-left: 10rem !important;
   border-radius: 20px !important;
 }
 footer .footerlogo {
