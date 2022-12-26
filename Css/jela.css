@@ -1,0 +1,18 @@
+.jelar-khobor select, .jelar-khobor select option{
+    font-size: 20px;
+}
+.jelar-khobor select option:hover{
+    background-color: red !important;
+}
+.jelar-khobor i{
+    font-size: 18px !important;
+}
+.jelar-khobor .form-control{
+    -webkit-appearance: auto;
+    appearance: auto !important;
+}
+.jelar-khobor .districts-list a{
+    margin: 5px;
+    color: white !important;
+    font-size: 18px;
+}
